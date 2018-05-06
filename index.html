@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbarNav">
     <div id="wrapper">
 
 
@@ -25,9 +25,9 @@
         <section class="container-fluid" id="section1">
 
             <div id="nav-main">
-                <div class="container">
+                <div id="nav-contact-info" class="container d-none d-md-block">
                     <div class="row">
-                        <div class="col d-none d-md-block ">
+                        <div class="col  ">
                             <ul class="list-inline">
                                 <li class="list-inline-item">
                                     <i class="fas fa-phone"></i> 500-000-000</li>
@@ -38,6 +38,32 @@
                     </div>
                 </div>
                 <hr class="my-1 d-none d-md-block">
+                <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light mt-2 bg-md-dark">
+                  <a class="navbar-brand" href="#"> <img src="img/kapelusz-01.svg" alt="Logo"></a>
+                  <button class="navbar-toggler active" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                  </button>
+                  
+                   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item ">
+                        <a class="nav-link" href="#section1">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#section2">Features</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#section3">Pricing</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#section4">Disabled</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+                </div>
+<!--
                 <nav>
                     <div class="container mt-2">
                         <ul class="nav justify-content-end nav-pills">
@@ -56,18 +82,19 @@
                         </ul>
                     </div>
                 </nav>
+-->
             </div>
 
             <div class="jumbotron">
                 <div class="container">
                     <div class="d-inline-block position-relative mb-4">
                         <img id="logo" class="img-fluid" src="./img/kapelusz-01.svg" alt="Logo">
-                        <h1 class="main-color">Jarzębak</h1>
+                        <h1 class=" display-3 main-color">Jarzębak</h1>
                     </div>
                     <p class="lead text-nowrap">Usługi budowlane</p>
                     <p class="lead text-nowrap">Budowa domów</p>
                     <hr class="my-4 my-4--shorter">
-                    <a class="btn btn-primary btn-lg mt-0" href="#" role="button">Zatrudnij specjalistów</a>
+                    <a class="btn btn-warning btn-lg mt-0 text-uppercase" href="#" role="button">Zatrudnij specjalistów</a>
                 </div>
             </div>
 
@@ -98,7 +125,11 @@
                         fermentum hendrerit, nisi diam viverra feugiat viverra diam.felis tortor. Lorem ipsum dolor sit amet,
                         consectetur adipiscing nulla quis fermentum hendrerit, nisi diam viverra feugiat viverra diam.felis
                         tortor</p>
+                        <hr>
+                        <a class="btn btn-lg btn-outline-warning  rounded-0 text-uppercase" href="#" role="button">Realizacje</a>
                 </div>
+                
+                
             </div>
         </section>
 
@@ -133,6 +164,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>

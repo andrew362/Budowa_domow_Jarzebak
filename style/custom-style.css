@@ -1,8 +1,16 @@
 
+
+html {
+  font-size: 10px;
+    min-width: 300px;
+}
+
+
+
 h1,h2 {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-    font-weight: 900 !important;
+  font-weight: 900 !important;
 }
 
 hr {
@@ -17,7 +25,7 @@ p {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin: 0;
 }
 
@@ -67,8 +75,8 @@ p {
 .jumbotron {
     position: absolute;
     top: 50%;
-    left:5%;
-    right:5%;
+    left:10%;
+    right:10%;
     margin: auto;
     background-color: transparent;
     transform: translateY(-70%);
@@ -81,7 +89,6 @@ p {
 
 .jumbotron a{
     margin-left: 10%;
-    background-color: orange;
     border: none;
     border-radius: 0;
 }
@@ -94,11 +101,7 @@ p {
     height: 100px;
 }
 
-#logo h1 {
-    z-index: 1;
-    position: relative;
-    
-}
+
 
 .my-4--shorter {
     width:40%;
@@ -151,11 +154,12 @@ p {
 
 
 #section2{
-    height: 600px;
-	margin-top:100vh;
+    height: 700px;
+	
+    background-color: #eee;
     background-image: url("../img/construction-646918_1920.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: 70% 50%;
     position: relative;
 }
 
@@ -166,7 +170,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
 }
 
@@ -174,10 +178,65 @@ p {
     color: #fff;
     position: relative;
     z-index: 4;
-    width: 60%;
-    padding-top: 60px;
+    width: 50%;
+    padding-top: 90px;
 }
 
 #section2 .container .float-left p {
-    margin-top: 50px;
+    margin: 60px 0;
+    line-height: 1.8em;
+    padding-right: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    html {
+  font-size: 0.7rem;
+}
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    html {
+  font-size: 1.0rem;
+}
+}
+
+/*// Medium devices (tablets, 768px and down)*/
+@media (max-width: 768px) { 
+    .navbar-collapse ul {
+        background-color: #454545;
+    }
+    
+    #nav-main li {
+        margin: 0 !important;        
+    }
+    #nav-main li a {
+        margin: 0%;
+    }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    html {
+  font-size: 1.0rem;
+}
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    html {
+  font-size: 1.0rem;
+}
 }
