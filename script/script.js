@@ -1,3 +1,5 @@
+var navBg = $('#nav-main');
+
 
 // animacja danych kontaktowych w nawigacji
 
@@ -8,16 +10,12 @@ $(window).on('scroll', function(){
         //navContactInfo.stop();
         navContactInfo.slideUp(200,function() {
             navContactInfo.removeClass('d-md-block');
+            navBg.css('backgroundColor', 'rgba( 0, 0, 0, 0.6 )');
         });
-//        navContactInfo.animate({
-//            opacity: 0.25,
-//            height: 0
-//          }, 300, function() {
-//            navContactInfo.removeClass('d-md-block');
-//          });
         
     } else {
             navContactInfo.addClass('d-md-block');
             navContactInfo.slideDown(200);
+            navBg.css('backgroundColor', 'rgba( 0, 0, 0, 0)');
     }
 });
