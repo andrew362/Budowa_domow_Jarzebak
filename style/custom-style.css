@@ -1,16 +1,15 @@
-
-
 html {
-  font-size: 10px;
+    font-size: 10px;
     min-width: 300px;
 }
 
 
 
-h1,h2 {
+h1,
+h2 {
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-  font-weight: 900 !important;
+    font-weight: 900 !important;
 }
 
 hr {
@@ -18,7 +17,7 @@ hr {
 }
 
 p {
-    font-family: 'Raleway', sans-serif ;
+    font-family: 'Raleway', sans-serif;
 }
 
 .lead {
@@ -43,8 +42,8 @@ p {
     position: relative;
 }
 
-#section1{
-    padding:0;
+#section1 {
+    padding: 0;
     height: 100vh;
     position: relative;
     color: #fff;
@@ -58,7 +57,7 @@ p {
     top: 0px;
     z-index: 999;
     transition: 1s background;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     padding-bottom: 10px;
 }
 
@@ -86,19 +85,20 @@ p {
 .jumbotron {
     position: absolute;
     top: 50%;
-    left:10%;
-    right:10%;
+    left: 10%;
+    right: 10%;
     margin: auto;
     background-color: transparent;
     transform: translateY(-70%);
     z-index: 2;
 }
 
-.jumbotron p, .jumbotron hr {
+.jumbotron p,
+.jumbotron hr {
     margin-left: 10%;
 }
 
-.jumbotron a{
+.jumbotron a {
     margin-left: 10%;
     border: none;
     border-radius: 0;
@@ -115,13 +115,14 @@ p {
 
 
 .my-4--shorter {
-    min-width:200px;
+    min-width: 200px;
     width: 40%;
     margin-top: 5px !important;
     margin-bottom: 15px !important;
 }
+
 .my-2 {
-    width:30%;    
+    width: 30%;
     position: relative;
 }
 
@@ -145,10 +146,10 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: -moz-linear-gradient(top, rgba(0,0,0,0.55) 20%, rgba(0,0,0,0) 90%);
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0.55) 20%,rgba(0,0,0,0) 90%);
-    background: linear-gradient(to bottom, rgba(0,0,0,0.55) 20%,rgba(0,0,0,0) 90%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.55) 20%, rgba(0, 0, 0, 0) 90%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.55) 20%, rgba(0, 0, 0, 0) 90%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 20%, rgba(0, 0, 0, 0) 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
     z-index: 1;
 }
 
@@ -167,10 +168,9 @@ p {
 
 /************** SECTION 2 *************************/
 
-
-#section2{
+#section2 {
     min-height: 700px;
-	
+
     background-color: #eee;
     background-image: url("../img/construction-646918_1920.jpg");
     background-size: cover;
@@ -206,67 +206,68 @@ p {
 
 /************** SECTION 3*************************/
 
-
 #section3 {
-    height: 700px;
-    background-color: #eee;
     position: relative;
+    padding-top: 40px;
     width: 100%;
 }
 
-#offerSection p, #whyWeSection p {
+#whyWeSection {
+    height: auto;
+    background-color: #eee;
+}
+
+#offerSection p,
+#whyWeSection p {
     font-size: 1.1rem;
 }
 
-#offerSection h3, #whyWeSection h3 {
+#offerSection h3,
+#whyWeSection h3 {
     font-size: 1.6rem;
 }
 
-#offerSection .image-container{
+#offerSection .image-container {
     overflow: hidden;
 }
 
-#offerSection .image-container img{
+#offerSection .image-container img {
     transition: 1s transform;
 }
 
-#offerSection .image-container:hover img{
-    transform: scale(1.1);
+#offerSection .image-container:hover img {
+    transform: scale(1.05);
 }
 
-.icon-placeholder--circle{
+.icon-placeholder--circle {
     width: 50%;
     background-color: #fff;
     border-radius: 50%;
     position: relative;
     margin: auto;
-    transform: translate(0,50%);
+    transform: translate(0, 50%);
     border: 4px solid #424141;
     overflow: hidden;
-    transition: 1s background;
+    transition: 0.5s background;
     color: #444;
 }
 
 .icon-placeholder--circle::after {
-      content: "";
-      display: block;
-      padding-bottom: 100%;
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 }
 
-.icon-placeholder--circle:hover{
+.icon-placeholder--circle:hover {
     background-color: orange;
 }
 
 .icon-placeholder--circle i {
-  position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     transition: 300ms transform;
-}
-
-.icon-placeholder--circle:hover i{
-    transform: translate(-50%,-50%) scale(1.03);
 }
 
 
@@ -279,101 +280,210 @@ p {
     margin-bottom: 10%;
 }
 
-.col-gutter--slim > div{
-    padding:0 3px;
+.col-gutter--slim > div {
+    padding: 0 3px;
     margin-top: -5%;
 }
 
 
 
 
+/************** SECTION 3*************************/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 576px) { 
-    html {
-  font-size: 0.65rem;
+#section4 {
+    background-color: #eee;
+    background-image: url("../img/tools-498202_1920.jpg");
+    background-size: cover;
+    background-position: 70% 50%;
+    position: relative;
+    color: #fff;
+    padding: 40px 0;
 }
+
+#section4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+#gallerySection{
+    position: relative;
+    z-index: 2;
+}
+
+/*-----------Gallery-----------*/
+
+.slider-for div {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    height: 400px;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+
+.slider-for div img {
+    position: relative;
+    display: block;
+    max-height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-nav div {
+    height: 90px;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
+
+.slider-nav div img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slick-next {
+    transform: translateX(-30px) !important;
+    z-index: 2;
+}
+
+.slick-prev {
+    transform: translateX(30px) !important; 
+    z-index: 2;
+}
+
+.slider-item-text{
+    position: absolute;
+    display: none;
+    padding: 3px 80px;
+    bottom: 0px;
+    z-index: 2;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 20px;
+   background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 2%,rgba(0,0,0,0.39) 15%,rgba(0,0,0,0.67) 32%,rgba(0,0,0,0.8) 40%,rgba(0,0,0,0.8) 59%,rgba(0,0,0,0.6) 72%,rgba(0,0,0,0.39) 86%,rgba(0,0,0,0) 99%,rgba(0,0,0,0) 100%);
+}
+
+/*----------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+    html {
+        font-size: 0.65rem;
+    }
 }
 
 
 /*// Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { 
+
+@media (min-width: 576px) {
     html {
-  font-size: 0.8rem;
-}
+        font-size: 0.8rem;
+    }
 }
 
 /*// Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { 
+
+@media (min-width: 768px) {
     html {
-  font-size: 0.9rem;
-}
+        font-size: 0.9rem;
+    }
 }
 
 /*// Medium devices (tablets, 768px and down)*/
-@media (max-width: 767px) { 
+
+@media (max-width: 767px) {
 
     h2 {
         font-size: 2.5rem;
     }
-    
-    h3{
+
+    h3 {
         font-size: 2.2rem;
     }
-     
+
     .navbar-collapse ul {
         background-color: #454545;
     }
-    
+
     #nav-main li {
-        margin: 0 !important;        
+        margin: 0 !important;
     }
     #nav-main li a {
         margin: 0%;
     }
-    
-    .icon-placeholder--circle{
+
+    .icon-placeholder--circle {
         width: 40%;
     }
+
+    #offerSection p,
+    #whyWeSection p {
+        font-size: 1.5rem;
+    }
+
+    #offerSection h3,
+    #whyWeSection h3 {
+        font-size: 2.4rem;
+    }
+
+    .col-gutter--slim > div {
+        margin-top: -10%;
+    }
+
+    .slider-for div {
+        width: 100%;
+        height: 250px;
+    }
+
+    .slider-for div img {
+        min-height: 100%;
+    }
+
+    .slider-nav div {
+        height: 70px;
+    }
+
     
-    #offerSection p, #whyWeSection p {
-    font-size: 1.5rem;
-}
-
-#offerSection h3, #whyWeSection h3 {
-    font-size: 2.4rem;
-}
     
-.col-gutter--slim > div{
-    margin-top: -10%;
-}
+  
+    
+    /*// Large devices (desktops, 992px and up)*/
+    @media (min-width: 992px) {
+        html {
+            font-size: 1.0rem;
+        }
+    }
 
-/*// Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { 
-    html {
-  font-size: 1.0rem;
-}
-}
-
-/*// Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
-    html {
-  font-size: 1.0rem;
-}
-}
+    /*// Extra large devices (large desktops, 1200px and up)*/
+    @media (min-width: 1200px) {
+        html {
+            font-size: 1.0rem;
+        }
+    }
