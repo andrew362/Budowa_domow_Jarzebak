@@ -105,12 +105,17 @@ p {
     border-radius: 0;
 }
 
+.carousel-control-prev, .carousel-control-next{
+    width: 5%;
+}
+
+
 #logo {
     position: absolute;
-    top: -60px;
+    top: -90px;
     left: -40px;
     z-index: -1;
-    height: 100px;
+    height: 170px;
 }
 
 
@@ -155,18 +160,21 @@ p {
 }
 
 #slide-image-1 {
-    background-image: url('../img/concrete-pump-2222450_1920.jpg');
+    background-image: url('../img/tool-2222458_1920.jpg');
     background-attachment: fixed;
+    background-position: 50% 50%;
 }
 
 #slide-image-2 {
     background-image: url('../img/house-construction-1407499_1920.jpg');
     background-attachment: fixed;
+    background-position: 50% 70%;
 }
 
 #slide-image-3 {
-    background-image: url('../img/tool-2222458_1920.jpg');
+    background-image: url('../img/outdoor-2592821_1920.jpg');
     background-attachment: fixed;
+    background-position: 50% 50%;
 }
 
 
@@ -179,7 +187,7 @@ p {
     background-color: #eee;
     background-image: url("../img/construction-646918_1920.jpg");
     background-size: cover;
-    background-position: 70% 50%;
+    background-position: 65% 50%;
     position: relative;
 }
 
@@ -322,14 +330,14 @@ p {
     z-index: 1;
 }
 
-#gallerySection{
+#gallerySection {
     position: relative;
     z-index: 2;
 }
 
 /*-----------Gallery-----------*/
 
-.slider-for{
+.slider-for {
     margin: 80px 0;
 }
 
@@ -372,16 +380,22 @@ p {
 }
 
 .slick-next {
-    transform: translateX(-30px) !important;
+    transform: translateX(-70px) !important;
     z-index: 2;
 }
 
 .slick-prev {
-    transform: translateX(30px) !important; 
+    transform: translateX(30px) !important;
     z-index: 2;
 }
 
-.slider-item-text{
+.slick-prev:before, .slick-next:before {
+    font-size: 60px !important;
+    line-height: 0 !important;
+    opacity: .2 !important;
+}
+
+.slider-item-text {
     position: absolute;
     display: none;
     padding: 3px 80px;
@@ -393,11 +407,10 @@ p {
     text-align: center;
     font-size: 1.5em;
     border-radius: 20px;
-   background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 2%,rgba(0,0,0,0.39) 15%,rgba(0,0,0,0.67) 32%,rgba(0,0,0,0.8) 40%,rgba(0,0,0,0.8) 59%,rgba(0,0,0,0.6) 72%,rgba(0,0,0,0.39) 86%,rgba(0,0,0,0) 99%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 2%, rgba(0, 0, 0, 0.39) 15%, rgba(0, 0, 0, 0.67) 32%, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0.8) 59%, rgba(0, 0, 0, 0.6) 72%, rgba(0, 0, 0, 0.39) 86%, rgba(0, 0, 0, 0) 99%, rgba(0, 0, 0, 0) 100%);
 }
 
 /*----------------------*/
-
 
 /************** SECTION 5*************************/
 
@@ -405,10 +418,9 @@ p {
     margin-top: 0px;
     padding-top: 50px;
     padding-bottom: 150px;
-    background-image: url("../img/chainsaw.jpg");
+    background-image: url("../img/construction-2682641_1920.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-background-attachment: fixed;
     position: relative;
     color: #fff;
 }
@@ -421,8 +433,10 @@ background-attachment: fixed;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(65, 83, 86, 0.6);
     z-index: 1;
+
+
 }
 
 
@@ -432,7 +446,7 @@ background-attachment: fixed;
 }
 
 #section5 header {
-    padding-bottom: 90px;    
+    padding-bottom: 90px;
 }
 
 #section5 form .row .row {
@@ -451,20 +465,24 @@ background-attachment: fixed;
     border-radius: 0px;
 }
 
-#section5 form input:focus, #section5 form textarea:focus{
-    border:2px solid orange;
+#section5 form input:focus,
+#section5 form textarea:focus {
+    border: 2px solid orange;
     box-shadow: 0px 0px 1px 1px orange;
 }
 
-.form-contact-info{
+.form-contact-info {
     padding: 90px 0;
     white-space: nowrap;
 }
 
-.form-contact-info div div{
-    background-color: rgba(0,0,0, 0.6);
+.form-contact-info div div {
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 10px;
-    
+}
+
+.form-contact-info div div h3 {
+    font-size: 1.4em ;
 }
 
 
@@ -473,23 +491,23 @@ background-attachment: fixed;
 footer {
     width: 100%;
     background-color: #232323;
-    
+
 }
 
-.footer-nav{
+.footer-nav {
     font-size: 1.1em;
     font-weight: 100;
     padding: 20px 0;
     text-decoration: none;
-   
+
 }
 
 .footer-nav a {
-     color: #fff;
+    color: #fff;
 }
 
 .footer-nav a:hover {
-     color: orange;
+    color: orange;
     text-decoration: none;
 }
 
@@ -548,6 +566,8 @@ footer .copyright {
     }
     #nav-main li a {
         margin: 0%;
+        padding-left: 5%;
+        font-size: 1.5em;
     }
 
     .icon-placeholder--circle {
@@ -582,20 +602,32 @@ footer .copyright {
     }
 
     #section5 form .row .row {
-    width: 100%;
+        width: 100%;
 
-}
+    }
+    footer .footer-nav {
+        font-size: 1.5rem;
+    }
+
+    .form-contact-info div div h3 {
+        font-size: 2em ;
+    }
+
+    .slick-prev:before, .slick-next:before {
+        font-size: 40px !important;
+
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
-  
-    
+    .slick-next {
+        transform: translateX(-50px) !important;
+    }
+
+
+
+
+
+
+
     /*// Large devices (desktops, 992px and up)*/
     @media (min-width: 992px) {
         html {

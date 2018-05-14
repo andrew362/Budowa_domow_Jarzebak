@@ -1,11 +1,22 @@
    $(document).ready(function () {
-
        var navBg = $('#nav-main');
 
+       // ------smooth scrooling-----------  
 
-       // animacja danych kontaktowych w nawigacji
+       $(document).on('click', '.navigation', function (event) {
+           event.preventDefault();
+           stop();
+           var href = $(this).attr('href');
+           $('html, body').animate({
+               scrollTop: $(href).offset().top
+           }, 800, function () {
+               location.hash = href;
+           });
+       });
 
-       $(window).on('scroll', function () {
+       // --------------animacja danych kontaktowych w nawigacji---------
+
+       $(document).on('scroll', function () {
            console.log($(this).scrollTop());
            var navContactInfo = $('#nav-contact-info');
            if ($(this).scrollTop() > 50) {
@@ -14,7 +25,6 @@
                    navContactInfo.removeClass('d-md-block');
                    navBg.css('backgroundColor', 'rgba( 0, 0, 0, 0.6 )');
                });
-
            } else {
                navContactInfo.addClass('d-md-block');
                navContactInfo.slideDown(200);
@@ -22,8 +32,7 @@
            }
        });
 
-
-
+       // -----------------Galeria------------------
 
        $('.slider-for').slick({
            slidesToShow: 1,
@@ -33,7 +42,7 @@
            arrows: true,
            asNavFor: '.slider-nav'
        });
-       
+
        $('.slider-nav').slick({
            slidesToShow: 7,
            slidesToScroll: 1,
@@ -53,7 +62,7 @@
                        infinite: true,
                        dots: true
                    }
-    },
+                },
                {
                    breakpoint: 767,
                    settings: {
@@ -62,7 +71,7 @@
                        dots: true
 
                    }
-    },
+                },
                {
                    breakpoint: 450,
                    settings: {
@@ -70,10 +79,7 @@
                        slidesToScroll: 2,
                        dots: true
                    }
-    }
-    ]
+                }
+            ]
        });
-
-
-
    });
